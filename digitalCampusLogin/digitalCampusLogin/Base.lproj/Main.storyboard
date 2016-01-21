@@ -35,29 +35,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDy-aM-Bqc">
-                                <rect key="frame" x="316" y="260" width="234" height="30"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="注册"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc0-5m-WLP">
-                                <rect key="frame" x="50" y="260" width="249" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc0-5m-WLP">
+                                <rect key="frame" x="50" y="260" width="245" height="30"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="登录"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMx-ct-mgY">
+                                <rect key="frame" x="303" y="330" width="247" height="30"/>
+                                <state key="normal" title="忘记密码"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDy-aM-Bqc">
+                                <rect key="frame" x="303" y="260" width="247" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="注册"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dMx-ct-mgY" firstAttribute="width" secondItem="WDy-aM-Bqc" secondAttribute="width" id="14m-n4-zQz"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="width" secondItem="WDy-aM-Bqc" secondAttribute="width" multiplier="2" constant="10" id="3tY-Gb-RGc"/>
                             <constraint firstItem="8A6-fS-n5J" firstAttribute="centerX" secondItem="mtd-Gd-zDp" secondAttribute="centerX" id="45e-uZ-nC1"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="width" secondItem="hc0-5m-WLP" secondAttribute="width" multiplier="2" constant="10" id="9Ot-1e-dek"/>
                             <constraint firstItem="mtd-Gd-zDp" firstAttribute="top" secondItem="8A6-fS-n5J" secondAttribute="bottom" constant="40" id="DNT-4q-hIr"/>
+                            <constraint firstItem="dMx-ct-mgY" firstAttribute="top" secondItem="WDy-aM-Bqc" secondAttribute="bottom" constant="40" id="DpP-f7-lDX"/>
                             <constraint firstItem="mtd-Gd-zDp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFf-j5-wub"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mtd-Gd-zDp" secondAttribute="trailing" constant="30" id="PHa-vx-VAW"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="top" secondItem="mtd-Gd-zDp" secondAttribute="bottom" constant="35" id="POw-NH-YZP"/>
                             <constraint firstItem="mtd-Gd-zDp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="TLR-nB-ZcU"/>
                             <constraint firstItem="hc0-5m-WLP" firstAttribute="leading" secondItem="k0u-h2-R4H" secondAttribute="leading" id="XEa-ZO-JEZ"/>
                             <constraint firstItem="WDy-aM-Bqc" firstAttribute="trailing" secondItem="k0u-h2-R4H" secondAttribute="trailing" id="YDd-Tz-mZg"/>
+                            <constraint firstItem="dMx-ct-mgY" firstAttribute="trailing" secondItem="WDy-aM-Bqc" secondAttribute="trailing" id="fId-oi-9vJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k0u-h2-R4H" secondAttribute="trailing" constant="30" id="fec-yu-Eev"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="g1N-Pk-dAB"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="centerX" secondItem="mtd-Gd-zDp" secondAttribute="centerX" id="jhX-tT-6p8"/>
