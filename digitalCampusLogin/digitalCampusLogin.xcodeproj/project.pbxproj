@@ -12,6 +12,8 @@
 		227EAD4A1C508A1100F61AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227EAD481C508A1100F61AC9 /* Main.storyboard */; };
 		227EAD4C1C508A1100F61AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227EAD4B1C508A1100F61AC9 /* Assets.xcassets */; };
 		227EAD4F1C508A1100F61AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227EAD4D1C508A1100F61AC9 /* LaunchScreen.storyboard */; };
+		227EAD571C511F1800F61AC9 /* SecondRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EAD561C511F1800F61AC9 /* SecondRegister.swift */; };
+		227EAD591C5120D100F61AC9 /* ThirdForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EAD581C5120D100F61AC9 /* ThirdForgetPassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		227EAD4B1C508A1100F61AC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		227EAD4E1C508A1100F61AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		227EAD501C508A1100F61AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		227EAD561C511F1800F61AC9 /* SecondRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondRegister.swift; sourceTree = "<group>"; };
+		227EAD581C5120D100F61AC9 /* ThirdForgetPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdForgetPassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				227EAD4B1C508A1100F61AC9 /* Assets.xcassets */,
 				227EAD4D1C508A1100F61AC9 /* LaunchScreen.storyboard */,
 				227EAD501C508A1100F61AC9 /* Info.plist */,
+				227EAD561C511F1800F61AC9 /* SecondRegister.swift */,
+				227EAD581C5120D100F61AC9 /* ThirdForgetPassword.swift */,
 			);
 			path = digitalCampusLogin;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227EAD571C511F1800F61AC9 /* SecondRegister.swift in Sources */,
+				227EAD591C5120D100F61AC9 /* ThirdForgetPassword.swift in Sources */,
 				227EAD471C508A1100F61AC9 /* ViewController.swift in Sources */,
 				227EAD451C508A1100F61AC9 /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +295,7 @@
 				227EAD551C508A1100F61AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

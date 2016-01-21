@@ -10,6 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="digitalCampusLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -41,6 +42,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMx-ct-mgY">
                                 <rect key="frame" x="305" y="334" width="245" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="忘记密码"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数字化校园" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8A6-fS-n5J">
@@ -74,9 +76,172 @@
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="311"/>
+            <point key="canvasLocation" x="241" y="903"/>
+        </scene>
+        <!--Third Forget Password-->
+        <scene sceneID="Kt4-mr-1jw">
+            <objects>
+                <viewController id="Zdb-Vr-Ywt" customClass="ThirdForgetPassword" customModule="digitalCampusLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xiK-8H-XIh"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ti-X7-LwD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kJT-no-SAe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="数字化校园" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cn-Tb-w8P">
+                                <rect key="frame" x="250" y="28" width="100" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsK-Qg-r5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="1797"/>
+        </scene>
+        <!--Second Register-->
+        <scene sceneID="F4F-iv-A4q">
+            <objects>
+                <viewController id="NCm-Nn-sJV" customClass="SecondRegister" customModule="digitalCampusLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BLa-pJ-8I6"/>
+                        <viewControllerLayoutGuide type="bottom" id="jxe-cP-O7L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n2f-E2-Qlw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数字化校园" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9Z-jk-pJ4">
+                                <rect key="frame" x="250" y="60" width="100" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入学号或工号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4W6-WX-W8t">
+                                <rect key="frame" x="50" y="124" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="学号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8WG-Oc-zl3">
+                                <rect key="frame" x="50" y="189" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="enM-g9-i0C">
+                                <rect key="frame" x="50" y="254" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Eq-1c-XwG">
+                                <rect key="frame" x="285" y="384" width="30" height="30"/>
+                                <state key="normal" title="注册"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmT-Ug-eFK">
+                                <rect key="frame" x="50" y="459" width="500" height="30"/>
+                                <state key="normal" title="已有帐号，直接登陆"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="昵称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P6x-Jf-BiB">
+                                <rect key="frame" x="50" y="319" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P6x-Jf-BiB" firstAttribute="leading" secondItem="4W6-WX-W8t" secondAttribute="leading" id="03R-ab-Mbg"/>
+                            <constraint firstItem="i9Z-jk-pJ4" firstAttribute="top" secondItem="BLa-pJ-8I6" secondAttribute="bottom" constant="40" id="3Ni-HG-eFs"/>
+                            <constraint firstItem="8WG-Oc-zl3" firstAttribute="top" secondItem="4W6-WX-W8t" secondAttribute="bottom" constant="35" id="7tJ-cN-vcD"/>
+                            <constraint firstItem="P6x-Jf-BiB" firstAttribute="centerX" secondItem="4W6-WX-W8t" secondAttribute="centerX" id="7wB-z4-yIa"/>
+                            <constraint firstItem="8WG-Oc-zl3" firstAttribute="leading" secondItem="4W6-WX-W8t" secondAttribute="leading" id="9Cv-5e-Jfp"/>
+                            <constraint firstItem="LmT-Ug-eFK" firstAttribute="centerX" secondItem="4W6-WX-W8t" secondAttribute="centerX" id="IuH-Uo-u4o"/>
+                            <constraint firstItem="LmT-Ug-eFK" firstAttribute="top" secondItem="3Eq-1c-XwG" secondAttribute="bottom" constant="45" id="NfM-mq-07t"/>
+                            <constraint firstItem="3Eq-1c-XwG" firstAttribute="centerX" secondItem="4W6-WX-W8t" secondAttribute="centerX" id="Odb-m9-qLJ"/>
+                            <constraint firstItem="8WG-Oc-zl3" firstAttribute="centerX" secondItem="4W6-WX-W8t" secondAttribute="centerX" id="YwV-0g-tPK"/>
+                            <constraint firstItem="4W6-WX-W8t" firstAttribute="leading" secondItem="n2f-E2-Qlw" secondAttribute="leadingMargin" constant="30" id="Zun-Cw-S8Y"/>
+                            <constraint firstItem="4W6-WX-W8t" firstAttribute="top" secondItem="i9Z-jk-pJ4" secondAttribute="bottom" constant="40" id="aUw-wd-1Lb"/>
+                            <constraint firstItem="enM-g9-i0C" firstAttribute="leading" secondItem="4W6-WX-W8t" secondAttribute="leading" id="cT3-LD-y9B"/>
+                            <constraint firstItem="enM-g9-i0C" firstAttribute="top" secondItem="8WG-Oc-zl3" secondAttribute="bottom" constant="35" id="l3v-ko-XAj"/>
+                            <constraint firstItem="P6x-Jf-BiB" firstAttribute="top" secondItem="enM-g9-i0C" secondAttribute="bottom" constant="35" id="mmW-Hk-lO0"/>
+                            <constraint firstItem="8WG-Oc-zl3" firstAttribute="width" secondItem="4W6-WX-W8t" secondAttribute="width" id="oBS-TP-mF2"/>
+                            <constraint firstItem="i9Z-jk-pJ4" firstAttribute="centerX" secondItem="4W6-WX-W8t" secondAttribute="centerX" id="peY-xV-YcD"/>
+                            <constraint firstItem="enM-g9-i0C" firstAttribute="centerX" secondItem="4W6-WX-W8t" secondAttribute="centerX" id="qYs-Et-0Ri"/>
+                            <constraint firstItem="P6x-Jf-BiB" firstAttribute="width" secondItem="4W6-WX-W8t" secondAttribute="width" id="qiR-DC-m8v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4W6-WX-W8t" secondAttribute="trailing" constant="30" id="rN0-Zx-J31"/>
+                            <constraint firstItem="3Eq-1c-XwG" firstAttribute="top" secondItem="P6x-Jf-BiB" secondAttribute="bottom" constant="35" id="smg-aq-RM5"/>
+                            <constraint firstItem="i9Z-jk-pJ4" firstAttribute="centerX" secondItem="n2f-E2-Qlw" secondAttribute="centerX" id="vGC-iE-a9X"/>
+                            <constraint firstItem="LmT-Ug-eFK" firstAttribute="width" secondItem="4W6-WX-W8t" secondAttribute="width" id="xtS-JQ-L21"/>
+                            <constraint firstItem="enM-g9-i0C" firstAttribute="width" secondItem="4W6-WX-W8t" secondAttribute="width" id="y4D-Mg-fiL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PNf-Fv-OE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="87"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t3h-J1-ZXF">
+            <objects>
+                <viewController id="OfA-GO-DcK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j3b-77-qk2"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Ap-8W-HqK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xwp-1M-h9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数字化校园" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbc-h3-0KC">
+                                <rect key="frame" x="250" y="60" width="100" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY8-lL-buU">
+                                <rect key="frame" x="255" y="339" width="90" height="30"/>
+                                <state key="normal" title="返回登录界面"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBm-HD-M6t">
+                                <rect key="frame" x="285" y="259" width="30" height="30"/>
+                                <state key="normal" title="提交"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQx-iZ-jKM">
+                                <rect key="frame" x="50" y="189" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入学号或工号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bR9-l4-kXf">
+                                <rect key="frame" x="50" y="124" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bR9-l4-kXf" firstAttribute="top" secondItem="Hbc-h3-0KC" secondAttribute="bottom" constant="40" id="3MM-un-XPA"/>
+                            <constraint firstItem="DQx-iZ-jKM" firstAttribute="top" secondItem="bR9-l4-kXf" secondAttribute="bottom" constant="35" id="4gm-Rv-8Kl"/>
+                            <constraint firstItem="QY8-lL-buU" firstAttribute="top" secondItem="kBm-HD-M6t" secondAttribute="bottom" constant="50" id="BZA-MD-YtQ"/>
+                            <constraint firstItem="Hbc-h3-0KC" firstAttribute="centerX" secondItem="bR9-l4-kXf" secondAttribute="centerX" id="F3n-kI-RP3"/>
+                            <constraint firstItem="bR9-l4-kXf" firstAttribute="leading" secondItem="Xwp-1M-h9Z" secondAttribute="leadingMargin" constant="30" id="P5X-fO-2Vb"/>
+                            <constraint firstItem="kBm-HD-M6t" firstAttribute="centerX" secondItem="bR9-l4-kXf" secondAttribute="centerX" id="UMZ-YQ-rse"/>
+                            <constraint firstItem="kBm-HD-M6t" firstAttribute="top" secondItem="DQx-iZ-jKM" secondAttribute="bottom" constant="40" id="VDm-qc-bk6"/>
+                            <constraint firstItem="Hbc-h3-0KC" firstAttribute="top" secondItem="j3b-77-qk2" secondAttribute="bottom" constant="40" id="WgF-LZ-oTU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bR9-l4-kXf" secondAttribute="trailing" constant="30" id="Xax-EA-qNO"/>
+                            <constraint firstItem="QY8-lL-buU" firstAttribute="centerX" secondItem="bR9-l4-kXf" secondAttribute="centerX" id="eHG-cQ-Hn5"/>
+                            <constraint firstItem="Hbc-h3-0KC" firstAttribute="centerX" secondItem="Xwp-1M-h9Z" secondAttribute="centerX" id="gto-QV-VCp"/>
+                            <constraint firstItem="DQx-iZ-jKM" firstAttribute="leading" secondItem="bR9-l4-kXf" secondAttribute="leading" id="khS-Km-Evo"/>
+                            <constraint firstItem="DQx-iZ-jKM" firstAttribute="centerX" secondItem="bR9-l4-kXf" secondAttribute="centerX" id="lN9-KS-ZIP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUJ-wD-aS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-418" y="87"/>
         </scene>
     </scenes>
 </document>
