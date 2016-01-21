@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -34,19 +35,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDy-aM-Bqc">
+                                <rect key="frame" x="316" y="260" width="234" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="注册"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc0-5m-WLP">
+                                <rect key="frame" x="50" y="260" width="249" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="登录"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="k0u-h2-R4H" firstAttribute="width" secondItem="WDy-aM-Bqc" secondAttribute="width" multiplier="2" constant="10" id="3tY-Gb-RGc"/>
                             <constraint firstItem="8A6-fS-n5J" firstAttribute="centerX" secondItem="mtd-Gd-zDp" secondAttribute="centerX" id="45e-uZ-nC1"/>
+                            <constraint firstItem="k0u-h2-R4H" firstAttribute="width" secondItem="hc0-5m-WLP" secondAttribute="width" multiplier="2" constant="10" id="9Ot-1e-dek"/>
                             <constraint firstItem="mtd-Gd-zDp" firstAttribute="top" secondItem="8A6-fS-n5J" secondAttribute="bottom" constant="40" id="DNT-4q-hIr"/>
                             <constraint firstItem="mtd-Gd-zDp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFf-j5-wub"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mtd-Gd-zDp" secondAttribute="trailing" constant="30" id="PHa-vx-VAW"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="top" secondItem="mtd-Gd-zDp" secondAttribute="bottom" constant="35" id="POw-NH-YZP"/>
                             <constraint firstItem="mtd-Gd-zDp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="TLR-nB-ZcU"/>
+                            <constraint firstItem="hc0-5m-WLP" firstAttribute="leading" secondItem="k0u-h2-R4H" secondAttribute="leading" id="XEa-ZO-JEZ"/>
+                            <constraint firstItem="WDy-aM-Bqc" firstAttribute="trailing" secondItem="k0u-h2-R4H" secondAttribute="trailing" id="YDd-Tz-mZg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k0u-h2-R4H" secondAttribute="trailing" constant="30" id="fec-yu-Eev"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="g1N-Pk-dAB"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="centerX" secondItem="mtd-Gd-zDp" secondAttribute="centerX" id="jhX-tT-6p8"/>
+                            <constraint firstItem="hc0-5m-WLP" firstAttribute="top" secondItem="k0u-h2-R4H" secondAttribute="bottom" constant="45" id="qi1-qF-Vs6"/>
                             <constraint firstItem="8A6-fS-n5J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="vGw-vS-bWH"/>
+                            <constraint firstItem="WDy-aM-Bqc" firstAttribute="top" secondItem="k0u-h2-R4H" secondAttribute="bottom" constant="45" id="yha-6h-SEg"/>
                         </constraints>
                     </view>
                 </viewController>
