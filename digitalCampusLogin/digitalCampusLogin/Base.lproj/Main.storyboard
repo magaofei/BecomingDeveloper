@@ -26,18 +26,13 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入帐号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mtd-Gd-zDp">
                                 <rect key="frame" x="169" y="120.5" width="263" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="263" id="3RI-NA-7O8"/>
-                                    <constraint firstAttribute="height" constant="30" id="Rkl-I3-Q9V"/>
+                                    <constraint firstAttribute="width" constant="263" id="uF3-iB-qGE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k0u-h2-R4H">
                                 <rect key="frame" x="169" y="185.5" width="263" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="aqb-vc-Ixl"/>
-                                    <constraint firstAttribute="width" constant="263" id="qy7-EW-PRw"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -48,6 +43,7 @@
                             <constraint firstItem="mtd-Gd-zDp" firstAttribute="top" secondItem="8A6-fS-n5J" secondAttribute="bottom" constant="40" id="DNT-4q-hIr"/>
                             <constraint firstItem="mtd-Gd-zDp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFf-j5-wub"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="top" secondItem="mtd-Gd-zDp" secondAttribute="bottom" constant="35" id="POw-NH-YZP"/>
+                            <constraint firstItem="k0u-h2-R4H" firstAttribute="width" secondItem="mtd-Gd-zDp" secondAttribute="width" id="R6N-Bt-YKz"/>
                             <constraint firstItem="k0u-h2-R4H" firstAttribute="centerX" secondItem="mtd-Gd-zDp" secondAttribute="centerX" id="jhX-tT-6p8"/>
                             <constraint firstItem="8A6-fS-n5J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="vGw-vS-bWH"/>
                         </constraints>
