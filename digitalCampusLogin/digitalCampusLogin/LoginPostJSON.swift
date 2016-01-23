@@ -33,8 +33,7 @@ class LoginPostJSON {
     
     
     
-    init (success: Bool, message: String){  //应该为创建  ，把内部的值转换
+    init (success: Bool){  //应该为创建  ，把内部的值转换
         _success = success
-        _message = message
     }
 }

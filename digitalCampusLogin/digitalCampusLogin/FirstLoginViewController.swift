@@ -43,11 +43,10 @@ class FirstLoginViewController: UIViewController {
                     
                     if let dict = json as? Dictionary<String, AnyObject>{   //开始解析JSON   意思应该是 从字典当中寻找
                         //print("DID WE GET HERE: \(dict.debugDescription)")   // “\” 应当是一个分隔符，用来分割前面的字符串和后面的代码   成功
-                        if let success = dict["success"] as? Bool,let message = dict["message"] as? String {   //如果里面有success的话就返回，要说明success 的值， 从LoginPostJSON.swift中调用
+                        if let success = dict["success"] as? Bool {   //如果里面有success的话就返回，要说明success 的值， 从LoginPostJSON.swift中调用
                             
-                            let LoginPost = LoginPostJSON(success: success,message: message)   //解析success
+                            let LoginPost = LoginPostJSON(success: success)   //解析success
                                 print(LoginPost.success)
-                                print(LoginPost.message)
                                 print("成功解析")
                             
                         }
