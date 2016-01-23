@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225C62EC1C53508100A2A62E /* LoginPostJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C62EB1C53508100A2A62E /* LoginPostJSON.swift */; };
 		227EAD451C508A1100F61AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EAD441C508A1100F61AC9 /* AppDelegate.swift */; };
 		227EAD471C508A1100F61AC9 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EAD461C508A1100F61AC9 /* FirstLoginViewController.swift */; };
 		227EAD4A1C508A1100F61AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227EAD481C508A1100F61AC9 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		225C62EB1C53508100A2A62E /* LoginPostJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPostJSON.swift; sourceTree = "<group>"; };
 		227EAD411C508A1100F61AC9 /* digitalCampusLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digitalCampusLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227EAD441C508A1100F61AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		227EAD461C508A1100F61AC9 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225C62EA1C53504700A2A62E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				225C62EB1C53508100A2A62E /* LoginPostJSON.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		227EAD381C508A1100F61AC9 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		227EAD431C508A1100F61AC9 /* digitalCampusLogin */ = {
 			isa = PBXGroup;
 			children = (
+				225C62EA1C53504700A2A62E /* Model */,
 				227EAD441C508A1100F61AC9 /* AppDelegate.swift */,
 				227EAD481C508A1100F61AC9 /* Main.storyboard */,
 				227EAD4B1C508A1100F61AC9 /* Assets.xcassets */,
@@ -146,6 +157,7 @@
 				227EAD591C5120D100F61AC9 /* ThirdForgetPassword.swift in Sources */,
 				227EAD471C508A1100F61AC9 /* FirstLoginViewController.swift in Sources */,
 				227EAD451C508A1100F61AC9 /* AppDelegate.swift in Sources */,
+				225C62EC1C53508100A2A62E /* LoginPostJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
