@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BE59EB134D5B955912FDF98 /* Pods_digitalCampusLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E616ADC23B08D4ED9ED610 /* Pods_digitalCampusLogin.framework */; };
 		225C62EC1C53508100A2A62E /* LoginPostJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C62EB1C53508100A2A62E /* LoginPostJSON.swift */; };
 		227EAD451C508A1100F61AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EAD441C508A1100F61AC9 /* AppDelegate.swift */; };
 		227EAD471C508A1100F61AC9 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227EAD461C508A1100F61AC9 /* FirstLoginViewController.swift */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08840508587BA1EB6A76FDC2 /* Pods-digitalCampusLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalCampusLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-digitalCampusLogin/Pods-digitalCampusLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		1714C0A4A79F16B13E4F6DD0 /* Pods-digitalCampusLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalCampusLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-digitalCampusLogin/Pods-digitalCampusLogin.release.xcconfig"; sourceTree = "<group>"; };
 		225C62EB1C53508100A2A62E /* LoginPostJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPostJSON.swift; sourceTree = "<group>"; };
 		227EAD411C508A1100F61AC9 /* digitalCampusLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digitalCampusLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227EAD441C508A1100F61AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		227EAD501C508A1100F61AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227EAD561C511F1800F61AC9 /* SecondRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondRegister.swift; sourceTree = "<group>"; };
 		227EAD581C5120D100F61AC9 /* ThirdForgetPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdForgetPassword.swift; sourceTree = "<group>"; };
+		41E616ADC23B08D4ED9ED610 /* Pods_digitalCampusLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_digitalCampusLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE59EB134D5B955912FDF98 /* Pods_digitalCampusLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				227EAD431C508A1100F61AC9 /* digitalCampusLogin */,
 				227EAD421C508A1100F61AC9 /* Products */,
+				3E0923C9D416DF691C84FE9B /* Pods */,
+				D57754820BDB07958DDC4BD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +88,23 @@
 			path = digitalCampusLogin;
 			sourceTree = "<group>";
 		};
+		3E0923C9D416DF691C84FE9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08840508587BA1EB6A76FDC2 /* Pods-digitalCampusLogin.debug.xcconfig */,
+				1714C0A4A79F16B13E4F6DD0 /* Pods-digitalCampusLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D57754820BDB07958DDC4BD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41E616ADC23B08D4ED9ED610 /* Pods_digitalCampusLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 227EAD531C508A1100F61AC9 /* Build configuration list for PBXNativeTarget "digitalCampusLogin" */;
 			buildPhases = (
+				E691F11147CA504764C6A193 /* Check Pods Manifest.lock */,
 				227EAD3D1C508A1100F61AC9 /* Sources */,
 				227EAD3E1C508A1100F61AC9 /* Frameworks */,
 				227EAD3F1C508A1100F61AC9 /* Resources */,
+				3B507079A4C97BAAE71C4913 /* Embed Pods Frameworks */,
+				AA3980CE3CFC2A82C201F908 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,6 +174,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B507079A4C97BAAE71C4913 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digitalCampusLogin/Pods-digitalCampusLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3980CE3CFC2A82C201F908 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digitalCampusLogin/Pods-digitalCampusLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E691F11147CA504764C6A193 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		227EAD3D1C508A1100F61AC9 /* Sources */ = {
@@ -268,6 +343,7 @@
 		};
 		227EAD541C508A1100F61AC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08840508587BA1EB6A76FDC2 /* Pods-digitalCampusLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = digitalCampusLogin/Info.plist;
@@ -279,6 +355,7 @@
 		};
 		227EAD551C508A1100F61AC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1714C0A4A79F16B13E4F6DD0 /* Pods-digitalCampusLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = digitalCampusLogin/Info.plist;
