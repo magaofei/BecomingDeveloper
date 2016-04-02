@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by MAMIAN on 16/3/29.
- */
+*/
 public class LessonAssignment_2InputArrayStatistics {
     public static void main(){
         int inputdata[] = new int[19];
