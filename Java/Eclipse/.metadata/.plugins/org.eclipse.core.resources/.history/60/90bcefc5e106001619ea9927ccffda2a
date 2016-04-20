@@ -1,0 +1,7 @@
+package ObjectAndMethod3;
+
+class BankAccount (String initName,int initAccountNumber){
+	ownerName=initName;
+	accountNumber=initAccountNumber;
+	balance=0.0f;
+}

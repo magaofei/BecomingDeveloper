@@ -1,0 +1,16 @@
+package ObjectAndMethod3;
+
+class BankAccount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String ownerName;   //Ãû×Ö
+		int accountNumber;  //ÕË»§ºÅ
+		float balance;    //Óà¶î
+		
+	}
+
+	
+}
+
+
