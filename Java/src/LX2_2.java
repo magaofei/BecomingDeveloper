@@ -1,4 +1,4 @@
-public class LX2_2 {
+/*public class LX2_2 {
 	public static void main(String[] args) {
 	AccessDemo a= new AccessDemo();
 	a.x=1;
@@ -10,8 +10,8 @@ public class LX2_2 {
 	public int setB(){
 		return a.y;
 	}
-	System.out.println("public³ÉÔ±±äÁ¿a.x="+a.x);
-	System.out.println("private³ÉÔ±±äÁ¿a.y="+a.y);
-	System.out.println("ÎÞÐÞÊÎ·û³ÉÔ±±äÁ¿a.z="+a.z);
+	System.out.println("publicï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½a.x="+a.x);
+	System.out.println("privateï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½a.y="+a.y);
+	System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Î·ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½a.z="+a.z);
 	}
-	}
+	}*/
