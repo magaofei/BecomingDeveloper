@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38b4affb-7597-4f27-b8b9-267db9a076f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/Assignment2/Point.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/Assignment2/PointOut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BecomingDeveloper.iws" />
@@ -41,8 +38,8 @@
       <file leaf-file-name="Point.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Java/src/Assignment2/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44474393">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.3638814">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -840,12 +837,19 @@
       <workItem from="1460088494336" duration="864000" />
       <workItem from="1461413150967" duration="387000" />
       <workItem from="1461757348007" duration="1476000" />
-      <workItem from="1461999643439" duration="922000" />
+      <workItem from="1461999643439" duration="972000" />
     </task>
+    <task id="LOCAL-00001" summary="Java作业,创建三维空间的点,并且计算该点到原点的距离">
+      <created>1462000613513</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1462000613513</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13463000" />
+    <option name="totallyTimeSpent" value="13513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1373" y="-22" width="1260" height="685" extended-state="0" />
@@ -911,6 +915,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Java作业,创建三维空间的点,并且计算该点到原点的距离" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java作业,创建三维空间的点,并且计算该点到原点的距离" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1322,8 +1330,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Java/src/Assignment2/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44474393">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.3638814">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
         </state>
       </provider>
