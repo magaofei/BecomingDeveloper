@@ -1,7 +1,0 @@
-package ObjectAndMethod3;
-
-public class BankAccount(String initName,int initAccountNumber, float initBalance){    //  自定义构造方法1
-	ownerName=initName;
-	accountNumber=initAccountNumber;
-	balance=initBalance;
-}
