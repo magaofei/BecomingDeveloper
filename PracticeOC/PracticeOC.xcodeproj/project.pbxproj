@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		227707E31CED619E00A56078 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 227707E21CED619E00A56078 /* main.m */; };
+		22EBFE9E1CEEB60F004127BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EBFE9D1CEEB60F004127BD /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		227707DD1CED619E00A56078 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		22EBFE991CEEB60F004127BD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		227707DF1CED619E00A56078 /* PracticeOC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PracticeOC; sourceTree = BUILT_PRODUCTS_DIR; };
 		227707E21CED619E00A56078 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22EBFE9B1CEEB60F004127BD /* JSONOC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JSONOC; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EBFE9D1CEEB60F004127BD /* main.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		227707DC1CED619E00A56078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EBFE981CEEB60F004127BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				227707E11CED619E00A56078 /* PracticeOC */,
+				22EBFE9C1CEEB60F004127BD /* JSONOC */,
 				227707E01CED619E00A56078 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				227707DF1CED619E00A56078 /* PracticeOC */,
+				22EBFE9B1CEEB60F004127BD /* JSONOC */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				227707E21CED619E00A56078 /* main.m */,
 			);
 			path = PracticeOC;
+			sourceTree = "<group>";
+		};
+		22EBFE9C1CEEB60F004127BD /* JSONOC */ = {
+			isa = PBXGroup;
+			children = (
+				22EBFE9D1CEEB60F004127BD /* main.m */,
+			);
+			path = JSONOC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = 227707DF1CED619E00A56078 /* PracticeOC */;
 			productType = "com.apple.product-type.tool";
 		};
+		22EBFE9A1CEEB60F004127BD /* JSONOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EBFEA11CEEB60F004127BD /* Build configuration list for PBXNativeTarget "JSONOC" */;
+			buildPhases = (
+				22EBFE971CEEB60F004127BD /* Sources */,
+				22EBFE981CEEB60F004127BD /* Frameworks */,
+				22EBFE991CEEB60F004127BD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONOC;
+			productName = JSONOC;
+			productReference = 22EBFE9B1CEEB60F004127BD /* JSONOC */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				ORGANIZATIONNAME = "Mark MaMian";
 				TargetAttributes = {
 					227707DE1CED619E00A56078 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					22EBFE9A1CEEB60F004127BD = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -109,6 +158,7 @@
 			projectRoot = "";
 			targets = (
 				227707DE1CED619E00A56078 /* PracticeOC */,
+				22EBFE9A1CEEB60F004127BD /* JSONOC */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +169,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				227707E31CED619E00A56078 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EBFE971CEEB60F004127BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EBFE9E1CEEB60F004127BD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +278,20 @@
 			};
 			name = Release;
 		};
+		22EBFE9F1CEEB60F004127BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22EBFEA01CEEB60F004127BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -239,6 +311,16 @@
 				227707E81CED619E00A56078 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22EBFEA11CEEB60F004127BD /* Build configuration list for PBXNativeTarget "JSONOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EBFE9F1CEEB60F004127BD /* Debug */,
+				22EBFEA01CEEB60F004127BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,45 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JSONOC.xcscheme</key>
+		<key>Array_Multi.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>iosExperience.xcscheme</key>
+		<key>DataSt.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>stack1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>22C9BB791CE4C1C2006E597B</key>
+		<key>229391991CF74022004BABF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>22C9BB921CE4C1C2006E597B</key>
+		<key>229391A71CF74049004BABF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>22C9BB9D1CE4C1C2006E597B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>22EBFEA51CEEB9C9004127BD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>22EBFEBD1CEEB9CA004127BD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>22EBFEC81CEEB9CA004127BD</key>
+		<key>229391BA1CF74108004BABF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
