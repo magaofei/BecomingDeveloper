@@ -1,3 +1,4 @@
+/*
 public class LX3_3 {
 	public static void main(String[] args) {
 	Paratran p=new Paratran();
@@ -7,3 +8,4 @@ public class LX3_3 {
 	System.out.println("方法调用后 x="+p.x+", y="+p.y);
 }
 }
+*/
