@@ -1,4 +1,4 @@
-package LessonAssignment;
+package Assignment1;
 
 
  /* Created by MAMIAN on 16/3/30.
