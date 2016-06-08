@@ -2,7 +2,7 @@ package Assignment4;
 
 /**
  * Created by MAMIAN on 16/6/1.
- */
+
 public class TestStudentPerson {
     public static void main(String args[]){
         Student a = new Student();
@@ -33,4 +33,4 @@ class Student extends Person{
     public String toString() {
         return super.toString();
     }
-}
+}*/
