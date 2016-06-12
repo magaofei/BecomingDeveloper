@@ -9,27 +9,27 @@ class Animal{
         this.name = name;
     }
     public void enjoy(){
-        System.out.println("å«å£°");
+        System.out.println("½ĞÉù");
     }
 }
 class Cat extends Animal{
     private String eyescolor;
-    Cat3(String n, String c){
+    Cat (String n, String c){
         super(n);
         eyescolor = c;
     }
     public void enjoy(){
-        System.out.println("çŒ«å«å£°");
+        System.out.println("Ã¨½ĞÉù");
     }
 }
 class Dog extends Animal{
     private String furcolor;
-    Dog3(String n, String c){
+    Dog (String n, String c){
         super(n);
         furcolor = c;
     }
     public void enjoy(){
-        System.out.println("ç‹—å«å£°");
+        System.out.println("¹·½ĞÉù");
     }
 }
 class Lady {
@@ -43,13 +43,24 @@ class Lady {
         pet.enjoy();
     }
 }
+class Bird extends Animal{
+    private String birdcolor;
+    Bird(String n,String birdcolor){
+        super(n);
+        birdcolor=birdcolor;
+    }
+    public void enjoy(){System.out.print("Äñ½ĞÉù");}
+}
 public class TestBinding {
     public static void main(String[] args) {
         Cat c = new Cat ("catname","blue");
         Dog d = new Dog ("dogname","black");
+        Bird b=new Bird("Birdname","yellow");
         Lady l1 = new Lady("l1",c);
         Lady l2 = new Lady("l2",d);
+        Lady l3=new Lady("l3",b);
         l1.myPetEnjoy();
         l2.myPetEnjoy();
+        l3.myPetEnjoy();
     }
 }

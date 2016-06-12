@@ -6,7 +6,6 @@ package Assignment4;
  class Person{
     private String name;
     private String location;
-    //必须在这里增加职称信息
     Person(String name){
         this.name = name;
         location = "beijing";
@@ -32,7 +31,8 @@ class Student extends Person {
         return super.info() + "school:" + school;
     }
 }
-class Teacher extends Person{
+class Teacher extends Person{//构造Teachher类
+
     private String zhicheng;
     Teacher(String name,String zhicheng){
         this(name,zhicheng,"zhicheng");
