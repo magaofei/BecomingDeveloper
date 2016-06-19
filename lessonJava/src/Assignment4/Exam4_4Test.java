@@ -29,15 +29,15 @@ public class Exam4_4Test
 {
     public static void main(String[] args)
     {
-        A a = new A ();
-        a.setx(4);
-        a.printa();
+       // A a = new A ();
+       // a.setx(4);
+       // a.printa();
         B b = new B();
         b.printb();
-        b.printa();
+      //  b.printa();
         b.setx(6);  // 将继承来的x值设置为6
         b.printb();
-        b.printa();
-        a.printa();
+      //  b.printa();
+      //  a.printa();
     }
 }
