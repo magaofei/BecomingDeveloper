@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223CFF571DC708FE0001B56A /* ArticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 223CFF561DC708FE0001B56A /* ArticleView.m */; };
+		223CFF591DC709060001B56A /* ArticleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223CFF581DC709060001B56A /* ArticleView.xib */; };
 		22CE33C61DC32F870042738F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CE33C51DC32F870042738F /* main.m */; };
 		22CE33C91DC32F870042738F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CE33C81DC32F870042738F /* AppDelegate.m */; };
 		22CE33CF1DC32F870042738F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CE33CD1DC32F870042738F /* Main.storyboard */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		223CFF551DC708FE0001B56A /* ArticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleView.h; sourceTree = "<group>"; };
+		223CFF561DC708FE0001B56A /* ArticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleView.m; sourceTree = "<group>"; };
+		223CFF581DC709060001B56A /* ArticleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleView.xib; sourceTree = "<group>"; };
 		22CE33C11DC32F870042738F /* 基础控件实战单元作业.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "基础控件实战单元作业.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CE33C51DC32F870042738F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22CE33C71DC32F870042738F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +85,9 @@
 				22CE33DE1DC37F0C0042738F /* MyBlogViewController.h */,
 				22CE33DF1DC37F0C0042738F /* MyBlogViewController.m */,
 				22CE33C51DC32F870042738F /* main.m */,
+				223CFF581DC709060001B56A /* ArticleView.xib */,
+				223CFF551DC708FE0001B56A /* ArticleView.h */,
+				223CFF561DC708FE0001B56A /* ArticleView.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 				22CE33D41DC32F870042738F /* LaunchScreen.storyboard in Resources */,
 				22CE33D11DC32F870042738F /* Assets.xcassets in Resources */,
 				22CE33CF1DC32F870042738F /* Main.storyboard in Resources */,
+				223CFF591DC709060001B56A /* ArticleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +168,7 @@
 				22CE33C91DC32F870042738F /* AppDelegate.m in Sources */,
 				22CE33DD1DC37EF70042738F /* loginViewController.m in Sources */,
 				22CE33E01DC37F0C0042738F /* MyBlogViewController.m in Sources */,
+				223CFF571DC708FE0001B56A /* ArticleView.m in Sources */,
 				22CE33C61DC32F870042738F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +326,7 @@
 				22CE33DA1DC32F870042738F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

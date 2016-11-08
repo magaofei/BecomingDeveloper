@@ -7,7 +7,7 @@
 //
 
 #import "loginViewController.h"
-
+#import "MyBlogViewController.h"
 @interface loginViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *accountTextBgImageView;
 @property (weak, nonatomic) IBOutlet UITextField *accountTextField;
@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIImageView *tipImageView;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicatorView;
 
 @end
 
@@ -32,16 +33,91 @@
     UIImage *buttonBgImage = [[UIImage imageNamed:@"button-green"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10) resizingMode:UIImageResizingModeStretch];
     [_loginButton setBackgroundImage:buttonBgImage forState:UIControlStateNormal];
     [_loginButton setBackgroundImage:buttonBgImage forState:UIControlStateHighlighted];
+    [_loginButton setBackgroundImage:buttonBgImage forState:UIControlStateDisabled];
+    [_loginButton setTitle:@"" forState:UIControlStateDisabled];
     
-    [_loginButton addTarget:self action:@selector(loginButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    /**
+     添加监听
+
+     @param loginButtonPressed <#loginButtonPressed description#>
+     @return <#return value description#>
+     */
+//    [_loginButton addTarget:self action:@selector(loginButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     
+    _tipLabel.hidden = YES;
+    _tipImageView.hidden = YES;
+    //默认隐藏
+    [_loadingIndicatorView stopAnimating];
 }
 
 //当登陆按钮被按下
 - (void)loginButtonPressed {
+    NSLog(@"Login button pressed");
+}
+
+- (BOOL)cancelLogin{
+    //用户名admin  密码test
+    if ([_accountTextField.text isEqualToString:@"admin"] && [_passwordTextField.text isEqualToString:@"test"]) {
+        //验证成功
+        [self showBlogViewController];//跳转
+        _tipLabel.hidden = YES;
+        _tipImageView.hidden = YES;
+        return YES;  //验证成功
+    } else {
+        NSString *errorTip = @"";
+        if (_accountTextField.text.length == 0) {
+            errorTip = @"请输入用户名";
+        } else if (_passwordTextField.text.length == 0) {
+            errorTip = @"请输入密码";
+        } else {
+            errorTip = @"用户名或密码输入有误";
+        }
+        _tipImageView.hidden = NO;
+        _tipLabel.hidden = NO;
+        [_tipLabel setText:errorTip];
+        
+    }
+    return NO;
+    
+    
+}
+- (IBAction)loginButtonAction:(id)sender {
+    //关闭键盘
+    [self.view endEditing:YES];
+    
+    //显示
+    [_loadingIndicatorView startAnimating];
+    [_loginButton setEnabled:NO];
+    [_loadingIndicatorView setAlpha:0.5f]; //0.5的透明度
+    [UIView animateWithDuration:1.f animations:^{
+        [_loadingIndicatorView setAlpha:1.f];  //1透明度
+    } completion:^(BOOL finished) {//当动画完成
+        [_loadingIndicatorView stopAnimating];  //结束动画
+        [_loginButton setEnabled:YES];
+        [self cancelLogin]; //当动画完成调用
+    }];
+    
+    
+    
     
 }
 
+
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([self cancelLogin]) {
+        return YES;
+    } else {
+        [self loginButtonAction:nil];
+        return NO;
+    }
+}
+
+- (void)showBlogViewController {
+    //获取storyboard的ViewController
+    MyBlogViewController *viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"blogViewController"];
+    [self presentViewController:viewController animated:YES completion:nil];//跳转
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
