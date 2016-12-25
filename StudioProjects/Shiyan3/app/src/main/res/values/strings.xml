@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Shiyan3</string>
+    <string name="password">password</string>
+    <string name="button">button</string>
+    <string name="cancel">cancel</string>
+    <string name="img">img</string>
+    <string name="username">username</string>
+    <string name="hello">hello</string>
+</resources>
