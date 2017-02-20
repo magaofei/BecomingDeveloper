@@ -12,7 +12,6 @@ public class HelloWorld {
     // 定义静态方法sum，计算成绩总分，并返回总分
     public  static   int sum() {
         return score1 + score2;
-
     }
     public static void main(String[] args) {
 

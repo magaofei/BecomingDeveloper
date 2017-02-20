@@ -11,16 +11,18 @@ import android.content.Context;
 public class MyOpenHelper extends SQLiteOpenHelper {
 
     public MyOpenHelper(Context context) {
-        super(context, "mydb.db", null, 1);
+        super(context, "mydb2.db", null, 1);
         // TODO Auto-generated constructor stub
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "create table info(_id integer primary key autoincrement,name varchar(20)，phone varchar(20))";
+        // TODO Auto-generated method stub
+        String sql = "create table myTab(_id integer primary key autoincrement,name varchar(20)，phone varchar(20))";
         db.execSQL(sql);
-
     }
+
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -28,6 +30,8 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
 
     }
+
+
 
 
 

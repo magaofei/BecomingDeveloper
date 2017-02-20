@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,39 +7,46 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
     <Button
         android:id="@+id/bt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="add"
-        android:text="add"
+        android:text="insert"
+        android:onClick="insert"
 
         />
     <Button
         android:id="@+id/bt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="delete"
+        android:layout_toRightOf="@id/bt1"
         android:text="delete"
+        android:onClick="delete"
 
         />
-
     <Button
         android:id="@+id/bt3"
+        android:layout_toRightOf="@id/bt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="update"
         android:text="update"
+        android:onClick="update"
 
         />
     <Button
         android:id="@+id/bt4"
+        android:layout_toRightOf="@id/bt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="find"
         android:text="find"
+        android:onClick="find"
 
         />
+    <ListView
+        android:id="@+id/lv"
+        android:layout_below="@id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-</LinearLayout>
+        ></ListView>
+</RelativeLayout>

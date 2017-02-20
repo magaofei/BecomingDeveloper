@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Shiyan4</string>
+    <string name="name">name</string>
+    <string name="phone">phone</string>
 </resources>
