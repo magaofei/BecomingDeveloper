@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>vue Demo</title>
+</head>
+<body>
+    <div>
+    </div>
+    <div id="app">
+      <h3>接口测试</h3>
+      <p>
+        <!-- 使用 router-link 组件来导航. -->
+        <!-- 通过传入 `to` 属性指定链接. -->
+        <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+        <router-link to="/interfaceReport">接口测试报告</router-link>
+        <router-link to="/lastInterfaceResult">上个接口结果</router-link>
+      </p>
+      <!-- 路由出口 -->
+      <!-- 路由匹配到的组件将渲染在这里 -->
+      <router-view></router-view>
+    </div>
+
+
+
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/vue-router.js"></script>
+<script type="text/javascript" src="js/router_my.js"></script>
+</body>
+
+
+
+
+</html>

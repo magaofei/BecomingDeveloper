@@ -2,8 +2,16 @@
 
 // 1. 定义（路由）组件。
 // 可以从其他文件 import 进来
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
+const interfaceReport = { template: '<div id="interfaceReport">\
+                <h3>历史接口测试报告</h3>\
+                <table id="interfaceReportTable" class="table">\
+                </table>\
+            </div>' }
+const lastInterfaceResult = { template: '<div id="lastInterfaceResult">\
+                <h3>上次接口测试用例结果</h3>\
+                <table id="interfaceResultTable" class="table">\
+                </table>\
+            </div>' }
 
 // 2. 定义路由
 // 每个路由应该映射一个组件。 其中"component" 可以是
@@ -11,8 +19,8 @@ const Bar = { template: '<div>bar</div>' }
 // 或者，只是一个组件配置对象。
 // 我们晚点再讨论嵌套路由。
 const routes = [
-  { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar }
+  { path: '/interfaceReport', component: interfaceReport },
+  { path: '/lastInterfaceResult', component: lastInterfaceResult }
 ]
 
 // 3. 创建 router 实例，然后传 `routes` 配置
