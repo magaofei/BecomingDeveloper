@@ -25,3 +25,4 @@ def func1(*arg, **kwargs):
 if __name__ == '__main__':
 
 	func1([1,2,3,4], foo=1, bar=2)
+	
