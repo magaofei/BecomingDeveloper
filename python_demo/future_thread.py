@@ -52,8 +52,15 @@ def thread_pool_executor():
     """
     """
     with futures.ThreadPoolExecutor(MAX_WORKERS) as executor:
+        to_do = []
         res = executor.submit(plus_num_no_lock)
-        res = executor.submit(plus_num2_no_lock)
+        res2 = executor.submit(plus_num2_no_lock)
+        to_do.append(res)
+        to_do.append(res2)
+    
+        for future in futures.as_completed(to_do):
+            res = future.result()
+            print(res)
         # print(res.result())
     
 
