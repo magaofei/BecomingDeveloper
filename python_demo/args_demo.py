@@ -21,8 +21,19 @@ def func1(*arg, **kwargs):
 
 
 
+def func2(*arg):
+	print(arg)
+
 
 if __name__ == '__main__':
 
-	func1([1,2,3,4], foo=1, bar=2)
+	# func1([1,2,3,4], foo=1, bar=2)
+	d = [i for i in range(10)]
+	d2 = (i for i in range(10))
+	print(type(d2))
+	r = func2(d)
+	print(r)
+	print(*d)
+
+
 	
