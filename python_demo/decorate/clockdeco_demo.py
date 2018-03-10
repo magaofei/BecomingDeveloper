@@ -1,6 +1,6 @@
 
 import logging
-
+import os
 import time
 # from clockdeco import clock
 from clockdeco2 import clock
@@ -9,12 +9,19 @@ import functools
 def log(func):
     """
     给func装饰
-
     """
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(__file__)
+
     FORMAT = "[%(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s"
     logging.basicConfig(format=FORMAT)
+
+    # path = os.path.abspath(os.path.dirname(__file__))
     logger.setLevel(logging.DEBUG)
+
+    file_handler = logging.FileHandler(__file__ + '.log')
+    file_handler.setFormatter = FORMAT
+
+    logger.addHandler(file_handler)
 
     def logged(*arg, **kwargs):
 

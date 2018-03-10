@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="component_demo.js"></script>
+    <script type="text/javascript" src="../js/vue.js"></script>
+
+
+    <title>Vue Component</title>
+</head>
+<body>
+    <div id="app">
+        <my-conponent></my-conponent>
+        <my-conponent2></my-conponent2>
+    </div>
+
+    <script type="text/javascript">
+        Vue.component('my-conponent', {
+            template: '<div>1111112321312321321</div>'
+        })
+        var vmm = new Vue({
+            el: '#app',
+            data: '',
+
+        })
+
+    </script>
+
+</body>
+</html>
