@@ -20,3 +20,6 @@ if __name__ == '__main__':
 
     d = map( lambda x: x*x, [y for y in range(10)] )
     print(d)
+
+
+            

@@ -1,3 +1,5 @@
+import dis
+
 class Student(object):
     def __init__(self, name, score):
         self.__name = name
@@ -9,4 +11,9 @@ class Student(object):
 
 if __name__ == '__main__':
     bart = Student('Bart Simpson', 98)
-    bart.__name
+    # bart.__name
+
+    print(dis.dis(Student))
+    
+
+    
