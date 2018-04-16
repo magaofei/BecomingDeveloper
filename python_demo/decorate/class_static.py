@@ -15,6 +15,9 @@ class StaticDemo(object):
     def test(bar):
         return bar
 
+    @staticmethod
+    def test_static(d):
+        print(d)
 
 
 if __name__ == '__main__':
